@@ -1,0 +1,97 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background: #f7f5f2;
+  color: #566787;
+  // font-family: 'Roboto', serif;
+}
+
+.container {
+  max-width: 98vw;
+}
+
+.table-wrapper {
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(1,1,1,.05);
+  margin: 1.5rem auto;
+  padding: 1.25rem 1.6rem;
+}
+
+.table-title {
+  background: #062e6b;
+  border-radius: 3px 3px 0 0;
+  color: #fefefe;
+  margin: -20px -25px 10px;
+  padding: 16px 25px;
+
+  h2 {
+    font-size: 30px;
+    margin: 5px 0 0;
+  }
+}
+
+.search-box {
+  float: right;
+  position: relative;
+
+  .input-group {
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+  }
+
+  .input-group-addon, input {
+    border-color: #ddd;
+    border-radius: 0;
+  }
+
+   input {
+    background: #f4fcfd;
+    border: none;
+    border-radius: 2px !important;
+    height: 34px;
+    padding-right: 35px;
+  }
+
+  input:focus {
+    background: #eee;
+  }
+
+  input::placeholder {
+    font-style: italic;
+  }
+
+  .input-group-addon {
+    background: transparent;
+    border: none;
+    min-width: 35px;
+    padding: 6px 0;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+  }
+
+  i {
+    color: #a0a5b1;
+    font-size: 1.5rem;
+    position: relative;
+    // top: 2px;
+    // bottom: 2px;
+  }
+}
+
+.table {
+  margin-top: 15px;
+  table-layout: fixed;
+
+  th, td {
+    border-color: #e9e9e9;
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
